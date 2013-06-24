@@ -20,4 +20,11 @@
       <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
     </tr>
   </table>
+
+<div>
+  <% @matches.each do |word| %>
+  <%= word %>
+  <% end %>
+</div>
+
 </div>
